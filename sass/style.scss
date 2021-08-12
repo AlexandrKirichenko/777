@@ -1,0 +1,25 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+@import "abstract/_constants.scss";
+@import "layouts/container";
+@import "base/base";
+@import "base/buttons";
+
+
+
+//Components
+@import "layouts/sidebar";
+@import "layouts/header";
+@import "components/promo";
+@import "components/brands";
+@import "components/create-account";
+@import "components/sysop";
+
+
+
+//.sysop__container {
+//  background: #0460BA url(/img/logo-bg.svg) right bottom no-repeat;
+//  border-radius: 8px;
+//  height: 600px;
+//}
+//в пакет джейсоне
