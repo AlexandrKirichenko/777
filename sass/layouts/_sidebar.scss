@@ -1,10 +1,5 @@
-body {
-  position: relative;
-}
-
 .sidebar {
   background-color: $color-background;
-  //position: absolute;
   z-index: 100;
   width: 100%;
 }
@@ -16,14 +11,11 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  list-style: none;
   padding-left: 0
 }
 
 .menu__item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @include flex(flex-start);
   margin-right: 1.5rem;
 }
 
@@ -32,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 10px;
-  background-position: center; // помог встать по центру)))
+  background-position: center;
 }
 
 .menu__link {
@@ -100,24 +92,4 @@ body {
   background-image: url(/img/icons/sidebar/bot.png);
   width: 24px;
   height: 22px;
-}
-
-.ico_check {
-
-}
-
-.ico_binary {
-
-}
-
-.ico_binary {
-
-}
-
-.ico_binary {
-
-}
-
-.ico_binary {
-
 }

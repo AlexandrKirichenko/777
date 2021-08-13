@@ -2,7 +2,7 @@ $color-brand: #0460BA;
 $color-background: #F4F5F9;
 $color-hading: #1A233B;
 $color-text: #35415E;
-$color-text2: #FFFFFF;
+$color-white: #FFFFFF;
 $color-green: #06B247;
 
 $content-width: 1080px;
@@ -11,28 +11,31 @@ $mobile-bid-width: 414px;
 $mobile-small-width: 320px;
 
 h1 {
-  font-family: Nunito Sans, sans-serif;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 77px; /* or 128% */
+  //$size, $height, $weight, $style
+  @include font (6rem, 7.7rem, 800);
   color: $color-hading;
   margin-block-end: 0;
   margin-block-start: 0.67em;
 }
 
 h2 {
-  font-family: Nunito Sans, sans-serif;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 28px;
+  @include font (3.4rem, 2.8rem, 800);
 }
 
+
 h4 {
-  font-family: Nunito Sans, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px; /* identical to box height, or 122% */
+  @include font (1.8rem, 2.2rem, 800);
   color: $color-hading;
 }
 
+//TODO: add hovers
+
+a {
+  list-style-type: none;
+}
+
+a:visited {
+  color:$color-hading;
+  text-decoration:none
+}
 //.link-button

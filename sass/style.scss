@@ -1,19 +1,31 @@
 @import "../node_modules/normalize-scss/sass/normalize";
 @include normalize();
-@import "abstract/_constants.scss";
-@import "layouts/container";
+
+//Abstract
+@import "abstract/mixins";
+@import "abstract/constants.scss";
+@import "abstract/placeholders";
+
+
+//Base
 @import "base/base";
 @import "base/buttons";
+@import "base/icons/icons-features";
 
+//Layouts
+@import "layouts/container";
+@import "layouts/sidebar";
+@import "layouts/header";
+@import "layouts/footer";
 
 
 //Components
-@import "layouts/sidebar";
-@import "layouts/header";
 @import "components/promo";
 @import "components/brands";
 @import "components/create-account";
+@import "components/features";
 @import "components/sysop";
+@import "components/signage";
 
 
 

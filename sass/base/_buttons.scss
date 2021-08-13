@@ -1,35 +1,35 @@
 .button {
-  font-style: normal;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 32px;
+  @include font(1.5rem, 3.2rem, 700);
   text-align: center;
-  border-radius: 10%;
-  font-family: Nunito Sans;
+  border-radius: 0.6rem;
   cursor: pointer;
+  height: 4.4rem;
+  &_bordered {
+    background: $color-white;
+    border: 0.3px solid $color-brand;
+    color: $color-brand;
+    &:hover {
+      background: $color-background;
+      color: $color-brand;
+      @extend %transition;
+    }
+  }
+  &_colored {
+    background: $color-brand;
+    border-color: $color-brand;
+    color: $color-white;
+
+    &:hover{
+      background: $color-white;
+      color: $color-brand;
+      @extend %transition;
+    }
+  }
+  &_long {
+    min-width: 180px;
+  }
 }
 
-.button_bordered {
-  background: $color-text2;
-  border: 0.3px solid $color-brand;
-  color: $color-brand;
-}
 
-.button_colored {
-  background: $color-brand;
-  border-color: $color-brand;
-  color: $color-text2;
-}
+//TODO: Add cheked link
 
-.button_colored:hover {
-  background: white;
-  color: $color-brand;
-  transition: all .3s;
-}
-
-.button_bordered:hover {
-  background: $color-background;
-  color: $color-brand;
-  transition: all .3s;
-}

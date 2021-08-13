@@ -3,21 +3,13 @@
 }
 
 .promo__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between);
   .promo__content {
-    //margin-top: 84px;
-    width: 451px;
-    height: 321px;
+    max-width: 451px;
     padding-bottom: 77px;
   }
   .content__text {
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
+    @include font(1.8rem, 3rem, normal);
     color: $color-text;
   }
 }
@@ -28,34 +20,25 @@
 }
 
 .promo__buttons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: #35415E;
+  @include flex(flex-start);
+  @include font(1.4rem, 3rem, normal);
+  color: $color-text;
 }
 
 .promo__image {
-  width: 576px;
-  //height: 476px;
+  max-width: 576px;
 }
 
-.pr {
+.prom {
   width: 119px;
-  height: 44px;
 }
 
 .ico_checked {
   margin-left: 15px;
-  background-image: url(/img/icons/checkmark.svg);
-  width: 24px;
-  height: 24px;
+  @include bg-img ("/img/icons/checkmark.png",2.4rem)
 }
 
 .acc {
-  width: 181px;
+  max-width: 181px;
 }
 
